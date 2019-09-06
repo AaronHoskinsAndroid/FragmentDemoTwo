@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123321"
+    android:orientation="vertical"
+    tools:context=".GreenFragment">
+
+    <TextView
+        android:id="@+id/tvMessageFromBlueFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/etGreenFragInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="Enter Info to Send to Blue Fragment"/>
+
+    <Button
+        android:id="@+id/btnSendDataToBlueFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Data To Blue Fragment"/>
+
+</LinearLayout>

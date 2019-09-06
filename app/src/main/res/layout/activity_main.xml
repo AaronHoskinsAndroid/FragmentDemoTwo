@@ -20,5 +20,29 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
+    <FrameLayout
+        android:id="@+id/frmPlaceTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Top Fragment"
+        android:onClick="onRemoveOneFragmentClicked"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Upto and including Fragment"
+        android:onClick="onRemoveMultiFragmentClicked"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Blue Fragment"
+        android:onClick="onRemoveSingleInstanceClicked"/>
+
 
 </LinearLayout>

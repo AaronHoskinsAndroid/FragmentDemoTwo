@@ -40,6 +40,7 @@ public class BlueFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRetainInstance(true);
         if (getArguments() != null) {
             passedData = getArguments().getString(ARG_PASSED_DATA);
         }
@@ -74,6 +75,10 @@ public class BlueFragment extends Fragment implements View.OnClickListener {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
+    }
+
+    public void setTextViewValue(final String message) {
+        tvPassedOnInit.setText(message);
     }
 
     @Override
